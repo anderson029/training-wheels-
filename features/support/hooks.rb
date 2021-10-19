@@ -1,3 +1,6 @@
+Before do
+  page.driver.browser.manage.window.maximize
+end
 
 After do |scenario|
   nome_cenario = scenario.name.gsub(" ", "_").downcase
