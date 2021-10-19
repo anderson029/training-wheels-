@@ -7,7 +7,7 @@ Funcionalidade: Acessar a home de treinamento
   Quero acessar a home 
   Para validar o acesso
 
-@home
+@home @base_auth
 Cenário: Acessar home
   Dado que acessei a home de treinamento
   Então vejo a url "https://training-wheels-protocol.herokuapp.com/basic_auth"
