@@ -11,7 +11,7 @@ Quando("marco meus filmes favoritos:") do |filme|
 
     #deu certo
     #find("input:nth-child(3)").click
-    sleep 5
+    #sleep 5
   end
 end
 
