@@ -1,5 +1,9 @@
 Before do
   page.driver.browser.manage.window.maximize
+
+  # username = "admin"
+  # password = "admin"
+  # visit "http://#{username}:#{password}@#{Capybara.current_session.server.host}:#{Capybara.current_session.server.port}/"
 end
 
 After do |scenario|
