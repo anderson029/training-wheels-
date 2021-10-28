@@ -1,6 +1,6 @@
 #language: pt
 
-@checkboxe
+@checkbox
 Funcionalidade: Marcar filmes
   Sendo usuário da plataforma
   Quero marcar os filmes que ja assisti

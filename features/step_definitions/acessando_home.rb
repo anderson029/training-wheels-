@@ -1,4 +1,5 @@
 require "selenium-webdriver"
+
 Dado("que acessei a home de treinamento") do
   visit "/"
   find("div ul li a", text: "Basic Auth").click
