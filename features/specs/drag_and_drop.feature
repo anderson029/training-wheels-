@@ -1,7 +1,7 @@
 #language: pt
 
 @drag_and_drop
-Funcionalidade: Arrastar Homem aranaha para o time do Tony Stark
+Funcionalidade: Arrastar Homem aranha para o time do Tony Stark
   Sendo que eu estou na tela Drag and Drop
   Quero arrastar a imagem do homem aranaha
   Para o time do Tony Stark

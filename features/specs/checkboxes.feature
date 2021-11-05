@@ -10,7 +10,7 @@ Funcionalidade: Marcar filmes
   Cenário: Marcar filmes com sucesso
     Dado que acesso a página de filmes
     Quando marco os filmes que já assisti:
-      | filme          |
-      | Homem de Ferro |
-      | Thor           |
+      | filme          |valor|
+      | Homem de Ferro |10   |
+      | Thor           |5    |
     Então vejo os filmes marcados

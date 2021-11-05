@@ -5,7 +5,6 @@ end
 Quando("arrasto a imagem do homem aranha para a caixa do Stark") do
   @time_stark = find("div.team-stark .column")
   @img_aranha = find("[alt='Homem Aranha']")
-
   @img_aranha.drag_to @time_stark
 end
 

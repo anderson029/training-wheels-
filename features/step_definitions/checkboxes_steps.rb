@@ -1,11 +1,12 @@
-Dado('que acesso a página de filmes') do
+Dado("que acesso a página de filmes") do
   visit "/checkboxes"
 end
 
-Quando('marco os filmes que já assisti:') do |table|
+Quando("marco os filmes que já assisti:") do |table|
   filmes = table.hashes
   filmes.each do |nome_filme|
     @filme = nome_filme[:filme].to_s
+    @valor = nome_filme[:valor].to_i
   end
 
   @homem_ferro = find('input[type="checkbox"]:nth-child(3)').set (true)
@@ -15,7 +16,7 @@ Quando('marco os filmes que já assisti:') do |table|
   @homem_formiga = find('input[type="checkbox"]:nth-child(11)').set (false)
 end
 
-Então('vejo os filmes marcados') do
+Então("vejo os filmes marcados") do
   # para validar se esta ticado so passar o .to_to be checked
   expect(@homem_ferro).to be_checked
   expect(@homem_ferro).to be_checked

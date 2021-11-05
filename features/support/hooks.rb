@@ -3,8 +3,8 @@ Before do
 end
 
 After do |scenario|
+  nome_feature = scenario.feature.name.gsub(" ", "_").downcase
   nome_cenario = scenario.name.gsub(" ", "_").downcase
-  puts nome_cenario
-  page.save_screenshot("logs/screenshot_evidency/#{nome_cenario}.png")
+  page.save_screenshot("logs/#{nome_feature}/#{nome_cenario}.png")
+  Capybara.current_session.driver.quit
 end
-
