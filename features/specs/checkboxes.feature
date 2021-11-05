@@ -6,7 +6,7 @@ Funcionalidade: Marcar filmes
   Quero marcar os filmes que ja assisti
   Para não repetir
 
-@positivo @tst
+@positivo 
   Cenário: Marcar filmes com sucesso
     Dado que acesso a página de filmes
     Quando marco os filmes que já assisti:
